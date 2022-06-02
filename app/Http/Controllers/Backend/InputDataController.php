@@ -591,6 +591,7 @@ class InputDataController extends Controller
     	$id_pengkajian = $request->id_pengkajian;
 
     	$t_pengkajian = DB::table("t_pengkajian")->where("id",$id_pengkajian)->get()->first();
+        $tanggal_pengkajian = date('d-m-Y');
 
     	$data_intervensi = array();
         $data_t_intervensi = array();
@@ -621,6 +622,9 @@ class InputDataController extends Controller
 		            ->orderBy('map_keluhan_intervensi.id_intervensi', 'ASC')
 		            ->get();
 	    	}
+
+            $tam_tp = explode("-",$t_pengkajian->tanggal_pengkajian);
+            $tanggal_pengkajian = $tam_tp[2]."-".$tam_tp[1]."-".$tam_tp[0];
 
             $data_t_intervensi = $t_pengkajian;
 
@@ -794,6 +798,10 @@ class InputDataController extends Controller
             $data_evaluasi_a .= "Masalah: Defisit Perawatan Diri Teratasi Sebagian, ";
         }
 
+        if($data_evaluasi_a != ""){
+            $data_evaluasi_a = substr($data_evaluasi_a, 0, strlen($data_evaluasi_a)-2);
+        }
+
     	$view = "backend.pages.pdf.implementasi_evaluasi";
 
     	$data_all = array(
@@ -804,6 +812,7 @@ class InputDataController extends Controller
             'data_evaluasi_o'=>$data_evaluasi_o,
             'data_evaluasi_a'=>$data_evaluasi_a,
             'data_evaluasi_p'=>$data_evaluasi_p,
+            'tanggal_pengkajian'=>$tanggal_pengkajian
 
     	);
 

@@ -118,7 +118,7 @@
                                     <label for="nama_pasien" class="col-sm-3 col-form-label">Nama Pasien : </label>
                                     <div class="col-sm-9">
                                       <input type="text" class="form-control" id="nama_pasien" placeholder="Nama Pasien" required="">
-                                      <input type="hidden" class="form-control" id="id_pengkajian" value="30">
+                                      <input type="hidden" class="form-control" id="id_pengkajian">
                                     </div>
                                   </div>
                                   <div class="form-group row">
@@ -976,7 +976,7 @@
                                     <div class="col-sm-4">
                                       <div class="form-check">
                                         <label class="form-check-label">
-                                          <input type="hidden" class="form-control" id="id_intervensi" value="1">
+                                          <input type="hidden" class="form-control" id="id_intervensi">
                                           <input type="radio" class="form-check-input" name="radio_batuk_int" id="radio_batuk_int1" value="1" onchange="change_keluhan_utama_int('radio_batuk_int',this.value)">
                                           Ada
                                         </label>
@@ -1677,7 +1677,7 @@
                                           <td>1</td>
                                           <td>Pengkajian fisik dan psikososial</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_1"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_1"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_1"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1709,7 +1709,7 @@
                                           <td>2</td>
                                           <td>Pengkajian Status fungsional</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_2"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_2"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_2"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1743,7 +1743,7 @@
                                         <tr>
                                           <td>a. Proses penyakit</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_3"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_3"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_3"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1773,7 +1773,7 @@
                                         <tr>
                                           <td>b. Obat- obatan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_4"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_4"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_4"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1803,7 +1803,7 @@
                                         <tr>
                                           <td>c. Prosedur , cara perawatan </td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_5"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_5"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_5"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1833,7 +1833,7 @@
                                         <tr>
                                           <td>d. Pencegahan factor resiko </td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_6"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_6"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_6"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1863,7 +1863,7 @@
                                         <tr>
                                           <td>e. Lingkungan yang perlu dipersiapkan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_7"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_7"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_7"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1893,7 +1893,7 @@
                                         <tr>
                                           <td>f. Rencana tindak lanjut</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_8"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_8"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_8"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1923,7 +1923,7 @@
                                         <tr>
                                           <td>g. Support sistem</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_9"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_9"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_9"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1957,7 +1957,7 @@
                                         <tr>
                                           <td>a. Fisioterapi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_10"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_10"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_10"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -1987,7 +1987,7 @@
                                         <tr>
                                           <td>b. Ahli gizi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_11"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_11"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_11"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2023,7 +2023,7 @@
                                         <tr>
                                           <td>a. Pengertian, penyebab tanda dan gejala</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_12"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_12"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_12"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2053,7 +2053,7 @@
                                         <tr>
                                           <td>b. Faktor resiko</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_13"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_13"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_13"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2083,7 +2083,7 @@
                                         <tr>
                                           <td>c. Komplikasi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_14"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_14"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_14"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2114,7 +2114,7 @@
                                           <td>6</td>
                                           <td>Penkes tentang obat- obatan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_15"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_15"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_15"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2145,7 +2145,7 @@
                                           <td>7</td>
                                           <td>Penkes tentang penatalaksanaan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_16"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_16"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_16"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2176,7 +2176,7 @@
                                           <td>8</td>
                                           <td>Penkes tentang pemeriksaan diagnostik</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_17"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_17"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_17"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2207,7 +2207,7 @@
                                           <td>9</td>
                                           <td>Penkes tentang tehabilitasi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_18"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_18"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_18"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2238,7 +2238,7 @@
                                           <td rowspan="4">10</td>
                                           <td>a. Kemampuan perawatan diri dan hygiene personal</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_19"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_19"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_19"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2268,7 +2268,7 @@
                                         <tr>
                                           <td>b. Kemampuan Perubahan posisi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_20"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_20"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_20"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2298,7 +2298,7 @@
                                         <tr>
                                           <td>c. Kemampuan Pencegahan jatuh</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_21"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_21"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_21"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2328,7 +2328,7 @@
                                         <tr>
                                           <td>d. Pencegahan aspirasi, latihan ROM dan teknik relaksasi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_22"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_22"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_22"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2364,7 +2364,7 @@
                                         <tr>
                                           <td>a. Pengaturan diet/ ( sesuai factor sesuai)</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_23"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_23"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_23"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2394,7 +2394,7 @@
                                         <tr>
                                           <td>b. Aktifitas fisik</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_24"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_24"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_24"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2424,7 +2424,7 @@
                                         <tr>
                                           <td>c. Merokok</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_25"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_25"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_25"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2454,7 +2454,7 @@
                                         <tr>
                                           <td>d. Penggunaan alcohol dan obat- obatan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_26"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_26"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_26"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2485,7 +2485,7 @@
                                           <td>12</td>
                                           <td>Diskusi tentang modifikasi lingkungan pasien setelah pulang dari rumah sakit</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_27"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_27"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_27"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2519,7 +2519,7 @@
                                         <tr>
                                           <td>a. Bantuan ADL</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_28"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_28"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_28"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2549,7 +2549,7 @@
                                         <tr>
                                           <td>b. Jadwal kontrol</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_29"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_29"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_29"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2582,7 +2582,7 @@
                                           <td>14</td>
                                           <td>Diskusi tentang pengawasan pada pasien setelah pulang tentang obat, diet, aktifitas dan peningkatan status fungsional</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_30"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_30"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_30"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2613,7 +2613,7 @@
                                           <td>15</td>
                                           <td>Diskusi tentang Support sistem keluarga, finansial dan alat transportasi yang akan digunakan pasien</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_dp_31"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_dp_31"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_dp_31"></td>
                                           <td class="p5">
                                             <div class="form-group mb0">
                                               <div class="form-check m0">
@@ -2728,8 +2728,8 @@
                                           <td>Resep obat- obatan pulang</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_cp_1"></td>
                                           <td class="p5">
-                                            <!-- <input type="time" name="time" id="time"/> -->
-                                            <input type="time" class="border-none" id="waktu_cp_1"></td>
+                                            <input type="text" class="border-none input-time" id="waktu_cp_1" placeholder="HH:MM" />
+                                            <!-- <input type="time" class="border-none" id="waktu_cp_1"></td> -->
                                           <td class="p5">
                                             <textarea id="belum_diberikan_1" class="form-control-sm textarea-cus" placeholder="alasan" rows="4" style=""></textarea>
                                           </td>
@@ -2741,7 +2741,7 @@
                                           <td>2</td>
                                           <td>Surat kontrol</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_cp_2"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_cp_2"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_cp_2"></td>
                                           <td class="p5">
                                             <textarea id="belum_diberikan_2" class="form-control-sm textarea-cus" placeholder="alasan" rows="4" style=""></textarea>
                                           </td>
@@ -2753,7 +2753,7 @@
                                           <td>3</td>
                                           <td>Rujukan rehabilitasi</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_cp_3"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_cp_3"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_cp_3"></td>
                                           <td class="p5">
                                             <textarea id="belum_diberikan_3" class="form-control-sm textarea-cus" placeholder="alasan" rows="4" style=""></textarea>
                                           </td>
@@ -2765,7 +2765,7 @@
                                           <td>4</td>
                                           <td>Leaflet informasi kesehatan</td>
                                           <td class="p5"><input type="date" class="border-none" id="tanggal_cp_4"></td>
-                                          <td class="p5"><input type="time" class="border-none" id="waktu_cp_4"></td>
+                                          <td class="p5"><input type="text" class="border-none input-time" id="waktu_cp_4"></td>
                                           <td class="p5">
                                             <textarea id="belum_diberikan_4" class="form-control-sm textarea-cus" placeholder="alasan" rows="4" style=""></textarea>
                                           </td>
@@ -2979,62 +2979,77 @@
       var minutes = now.getMinutes();
       var fix_hours = hours;
       var fix_minutes = minutes;
-      if(hours < 10){
-        fix_hours = "0"+hours;
-      }
+      // if(hours < 10){
+      //   fix_hours = "0"+hours;
+      // }
 
-      if(minutes < 10){
-        fix_minutes = "0"+minutes;
-      }
+      // if(minutes < 10){
+      //   fix_minutes = "0"+minutes;
+      // }
 
-      $("#nama_pasien").val("Agus");
-      $("#no_rm").val("12345");
-      $("#usia").val("28");
-      $("#tanggal_pengkajian").val(today);
-      $("input[name=radio_sumber_data][value='2']").prop("checked",true);
-      $("#riwayat_keluhan_pasien").val("Riwayat Keluhan Pasien");
-      $("#td_sistole").val("150");
-      changeTD("150",1);
-      $("#td_diastole").val("100");
-      changeTD("100",2);
-      $("#suhu").val("37");
-      $("#spo2").val("160");
-      $("#nadi").val("70");
-      changeN("70");
-      $("#rr").val("22");
-      changeRR("22");
-      $("#gcs").val("40");
-      $("input[name=radio_batuk][value='1']").prop("checked",true);
-      $("input[name=radio_sesak][value='1']").prop("checked",true);
-      $("input[name=radio_tegang][value='1']").prop("checked",true);
-      $("input[name=radio_kem_mandi][value='1']").prop("checked",true);
-      $("input[name=radio_kem_berhias_diri][value='2']").prop("checked",true);
-      $("#riwayat_perawatan_sebelumnya").val("Tidak ada...");
+      // $("#nama_pasien").val("Agus");
+      // $("#no_rm").val("12345");
+      // $("#usia").val("28");
+      // $("#tanggal_pengkajian").val(today);
+      // $("input[name=radio_sumber_data][value='2']").prop("checked",true);
+      // $("#riwayat_keluhan_pasien").val("Riwayat Keluhan Pasien");
+      // $("#td_sistole").val("150");
+      // changeTD("150",1);
+      // $("#td_diastole").val("100");
+      // changeTD("100",2);
+      // $("#suhu").val("37");
+      // $("#spo2").val("160");
+      // $("#nadi").val("70");
+      // changeN("70");
+      // $("#rr").val("22");
+      // changeRR("22");
+      // $("#gcs").val("40");
+      // $("input[name=radio_batuk][value='1']").prop("checked",true);
+      // $("input[name=radio_sesak][value='1']").prop("checked",true);
+      // $("input[name=radio_tegang][value='1']").prop("checked",true);
+      // $("input[name=radio_kem_mandi][value='1']").prop("checked",true);
+      // $("input[name=radio_kem_berhias_diri][value='2']").prop("checked",true);
+      // $("#riwayat_perawatan_sebelumnya").val("Tidak ada...");
 
-      for(var a=1;a<32;a++){
+      // for(var a=1;a<32;a++){
 
-        $('#tanggal_dp_'+a).val(today);
-        console.log(fix_hours+":"+fix_minutes);
-        $('#waktu_dp_'+a).val(fix_hours+":"+fix_minutes);
-        if(a < 22){
-          $("input[name=radio_dp_"+a+"][value='1']").prop("checked",true);
-        }else{
-          $('#tidak_dilakukan_'+a).val('Tidak Dilakukan '+a);
+      //   $('#tanggal_dp_'+a).val(today);
+      //   console.log(fix_hours+":"+fix_minutes);
+      //   $('#waktu_dp_'+a).val(fix_hours+":"+fix_minutes);
+      //   if(a < 22){
+      //     $("input[name=radio_dp_"+a+"][value='1']").prop("checked",true);
+      //   }else{
+      //     $('#tidak_dilakukan_'+a).val('Tidak Dilakukan '+a);
+      //   }
+
+      // }
+
+      // for(var a=1;a<5;a++){
+
+      //   $('#tanggal_cp_'+a).val(today);
+      //   $('#waktu_cp_'+a).val(fix_hours+":"+fix_minutes);
+      //   if(a < 3){
+      //     $('#belum_diberikan_'+a).val('Belum Diberikan '+a);
+      //   }else{
+      //     $('#keterangan_'+a).val('Keterangan '+a);
+      //   }
+
+      // }
+
+      $('.input-time').inputmask(
+        "59:59", {
+          placeholder: "HH:MM",
+          insertMode: false,
+          showMaskOnHover: false,
+          //hourFormat: 12,
+          definitions: {
+            '5': {
+              validator: "[0-5]",
+              cardinality: 1
+            }
+          }
         }
-
-      }
-
-      for(var a=1;a<5;a++){
-
-        $('#tanggal_cp_'+a).val(today);
-        $('#waktu_cp_'+a).val(fix_hours+":"+fix_minutes);
-        if(a < 3){
-          $('#belum_diberikan_'+a).val('Belum Diberikan '+a);
-        }else{
-          $('#keterangan_'+a).val('Keterangan '+a);
-        }
-
-      }
+      );
 
 
       $("#time").inputmask("h:s",{ "placeholder": "hh/mm" });
@@ -3839,6 +3854,7 @@
               var tam_radio1_val = $("input[name='"+arr_radio_1[a]+"']:checked").val();
               if(tam_radio1_val == "1"){
                 tam_radio1_kosong = 1;
+                
               }
 
             }

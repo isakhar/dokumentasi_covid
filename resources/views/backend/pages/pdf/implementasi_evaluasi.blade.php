@@ -26,8 +26,8 @@
       <p>
         <table class="tabel_1">
           <tr>
-            <td>Diagnosa Keperawatan : Bersihan Jalan Nafas Tidak Efektif</td>
-            <td>Tanggal : <?= date('d-m-Y')?></td>
+            <td>Diagnosa Keperawatan : <?= $data_evaluasi_a; ?></td>
+            <td>Tanggal : <?= $tanggal_pengkajian; ?></td>
           </tr>
         </table>
       </p>
